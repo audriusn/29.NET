@@ -43,9 +43,7 @@
         .table {
             width: 100%;
         }
-        }
-        .table2{
-        }
+        
         h1 { 
             text-transform: uppercase;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -54,9 +52,7 @@
             text-align: center;
             color: gray;
         }
-        #img {
-            border: 1px solid black;
-        }
+
         #border {
             border:5px dotted black;
             color:red;
@@ -67,22 +63,43 @@
             width: 210px;
             height: 210px;
         }
+        .table2{
+            width: 100%;
+            display:inline-block;
+        }
         .table-cell-left {
             display: inline-block;
             float: left;
+            width: 33%;
         }
-        .table-cell-centre {
+        .table-cell-center {
             display: inline-block;
             float: center;
+            width: 33%;
         }
         .table-cell-right{
             display: inline-block;
             float: right;
-
+            width: 33%;
+        }
+        .img{
+            width: 10%;
+        }
+        .redtext{
+            margin:0;
+        }
+            p:first-child {
+            color: Red;
+         } 
+        .lastname{
+            text-transform: capitalize;
+            font-weight: bold;
+            padding-left: 50px;
         }
         footer{
             text-align: left;
             color:gray;
+            font-size: 10px;
         }
     </style>
 </head>
@@ -107,28 +124,26 @@
         <div>
             <h1>Your headline goes here</h1>
         </div>
-        <div class="flex-table2">
+        <div class="table2">
                  <div class="table-cell-left">
-                        <div id="img" >
-                            <img src="img/foto-place.png">
+                        <div class="img" >
+                            <img src="img/foto-place.png"; width=220px>
                         </div>
                         <div id="border">
                              -Coupon-
                         </div>
                 </div>
                 <div class="table-cell-center">
-                    
-                        Billity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver Blah,Billity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver Blah
-                    
+                        <p class="redtext">Billity bobbity boo-</p> blah, blah, yack yack, yad yada, whaterver whatrver Blah,Billity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver Blah
                 </div>
                 <div class="table-cell-right">
-                    
-                        Billity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver Blah,Billity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver Blah
-                    
+                       <p class="redtext"> Billity bobbity boo-</p> blah, blah, yack yack, yad yada, whaterver whatrver Blah,Billity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver Blah
+                       <p class="lastname">By: your name</p>
                 </div>
+        </div>
     </main>
     <footer>
-        <p>K-5 Computer Lab oakdome.com</p>
+       K-5 Computer Lab oakdome.com
     </footer>
 </body>
 </html>
