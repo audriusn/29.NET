@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task2</title>
-    <Style>
+    <style>
         *  {
             box-sizing: border-box;
         }
-        header{
+        .header{
             text-transform: uppercase;
             font-weight: bolder;
             font-size: 60px;
             text-align: center;
             color: gray;
+        }
+        table{
+            width: 100%;
         }
         nav {
             background-color: blue;
@@ -22,20 +25,26 @@
             margin:0;
             padding:0;
         }
+        .table-cell-name{
+            display:inline-block;
+            width: 33%;
+        }
+        .table-cell-title{
+            display: inline-block;
+            text-transform:uppercase;
+            width: 33%;
+        }
+        .table-cell-price{
+            display: inline-block;
+            float: right;
+            padding-right: 20px;
+            
+        }
         .table {
-            display: table;
             width: 100%;
         }
-        p {
-            margin:0;
         }
-        .table-row {
-            display:table-row;
-            display: inline-block;
-        }
-        .table-cell {
-            display:table-cell;
-            width: 33%;
+        .table2{
         }
         h1 { 
             text-transform: uppercase;
@@ -45,9 +54,8 @@
             text-align: center;
             color: gray;
         }
-        #img{
+        #img {
             border: 1px solid black;
-            margin: 0px;
         }
         #border {
             border:5px dotted black;
@@ -59,66 +67,65 @@
             width: 210px;
             height: 210px;
         }
-         #text1{
-             
-         }
+        .table-cell-left {
+            display: inline-block;
+            float: left;
+        }
+        .table-cell-centre {
+            display: inline-block;
+            float: center;
+        }
+        .table-cell-right{
+            display: inline-block;
+            float: right;
+
+        }
         footer{
             text-align: left;
             color:gray;
         }
-    </Style>
+    </style>
 </head>
 <body>
-    <header>
-        <div>
-            The daily news
-        </div>
-    </header>
-    <nav>
-        <div class="table">
-            <div class="table-row">
-                <div class="table-cell">
-                    <p>Schoolname.com</p>
+    <header> 
+        <div class="header" >The daily News</div>
+        <nav>
+            <div class="table">  
+                 <div class="table-cell-name">
+                       Schoolname.com
                 </div>
-                <div class="table-cell">
-                   <p>This school best news</p>
+                <div class="table-cell-title">
+                    This school best news
                 </div>
-                <div class="table-cell">
-                   <p> $1.00</p>
+                <div class="table-cell-price">
+                      $1.00
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <main>
         <div>
             <h1>Your headline goes here</h1>
         </div>
-        <div class="table">
-            <div class="table-row">
-                <div class="table-cell">
-                    <div id="img">
-                        <img src="img/foto-place.png">
-                    </div>
-                    <div id="border">
-                        -Coupon-
-                    </div>
+        <div class="flex-table2">
+                 <div class="table-cell-left">
+                        <div id="img" >
+                            <img src="img/foto-place.png">
+                        </div>
+                        <div id="border">
+                             -Coupon-
+                        </div>
                 </div>
-                <div class="table-cell">
-                    <p id="text1">
+                <div class="table-cell-center">
+                    
                         Billity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver Blah,Billity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver Blah
-                    </p>
+                    
                 </div>
-                <div class="table-cell">
-                    <p id="text1">
+                <div class="table-cell-right">
+                    
                         Billity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver Blah,Billity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver BlahBillity bobbity boo- blah, blah, yack yack, yad yada, whaterver whatrver Blah
-                    </p>
+                    
                 </div>
-
-            </div>
-            
-                
-            
-        </div>
     </main>
     <footer>
         <p>K-5 Computer Lab oakdome.com</p>
