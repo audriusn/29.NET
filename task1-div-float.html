@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1-div-float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            text-transform:capitalize;
+            font-size: 40px;
+            font-family:initial;
+            font-weight: bold;
+            padding-bottom: 30px;
+        }
+        main {
+            margin-right: 40px;
+        }
+        .table {
+          display: inline-block;
+          width: 100%;
+       }
+        
+         .heading {
+             display: inline-block;
+             padding:0px;
+             font-weight: bold;
+             font-size: 20px;
+             border-bottom: 1px dotted black;
+             width: 100%;
+         }
+         
+         .title {
+             display:inline-block;
+             Font-weight: bold;
+             float: left;
+             border-bottom: 1px dotted black;
+             width: 80%;
+         }
+         .date{
+            display:inline-block;
+            font-style: italic;
+            float: right;
+            border-bottom: 1px dotted black;
+            width: 20%;
+            
+         }
+         .p1{
+             text-align: justify;
+             padding: 0;
+         }
+         div::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            footer{
+                border-top: 1px dotted black;
+            }
+    </style>
+</head>
+<body>
+    <header>
+            Simple news site
+    </header>
+    <main>
+        <div class="table">
+                <div class="row">
+                    <div class="heading">
+                        News
+                    </div>
+                </div>         
+                <div class="row">
+                    <div class="title">
+                        About this template
+                    </div>
+                    <div class="date">
+                        February 15, 2003
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="p1">
+                        Lorem ipsum dolor sit amet, consectetur <a href="">adipiscing</a> adipiscing elit. Vestibulum condimentum dui sapien, id scelerisque purus elementum quis. Etiam eleifend vitae nibh nec posuere.
+                    </p>
+                    <p>
+                        Cras dictum gravida ligula, et tempus nisl ornare eget. Mauris elit purus, tincidunt ut est sed, dignissim scelerisque turpis.
+                    </p> 
+                    <p>Cras dictum gravida ligula, et tempus nisl ornare eget. Mauris elit purus, tincidunt ut est sed, dignissim scelerisque turpis. Nunc dolor eros, posuere eget justo ut, mattis dapibus neque. Nam scelerisque imperdiet nisi ut rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos <a href="">himenaeos</a> . Quisque pulvinar libero eu urna sagittis consectetur. Mauris mattis ut lacus non malesuada. Morbi iaculis auctor velit, at viverra lectus dignissim vel. Curabitur non erat nec augue posuere blandit. Nam vel suscipit ligula.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        About this template
+                    </div>
+                    <div class="date">
+                        February 15, 2003
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="p1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing elit. Vestibulum condimentum dui sapien, id scelerisque purus elementum quis. Etiam eleifend vitae nibh nec posuere.
+                    </p>
+                    <p>
+                        Cras dictum gravida ligula, et tempus nisl ornare eget. Mauris elit purus, tincidunt ut est sed, dignissim scelerisque turpis.
+                    </p> 
+                    <p>Cras dictum gravida ligula, et tempus nisl ornare eget. Mauris elit purus, tincidunt ut est sed, dignissim scelerisque turpis. Nunc dolor eros, posuere eget justo ut, mattis dapibus neque. Nam scelerisque imperdiet nisi ut rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos. Quisque pulvinar libero eu urna sagittis consectetur. Mauris mattis ut lacus non malesuada. Morbi iaculis auctor velit, at viverra lectus dignissim vel. Curabitur non erat nec augue posuere blandit. Nam vel suscipit ligula.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        About this template
+                    </div>
+                    <div class="date">
+                        February 15, 2003
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="p1">
+                        Lorem ipsum dolor sit amet, consectetur  adipiscing elit. Vestibulum condimentum dui sapien, id scelerisque purus elementum quis. Etiam eleifend vitae nibh nec posuere.
+                    </p>
+                    <p>
+                        Cras dictum gravida ligula, et tempus nisl ornare eget. Mauris elit purus, tincidunt ut est sed, dignissim scelerisque turpis.
+                    </p> 
+                    <p>Cras dictum gravida ligula, et tempus nisl ornare eget. Mauris elit purus, tincidunt ut est sed, dignissim scelerisque turpis. Nunc dolor eros, posuere eget justo ut, mattis dapibus neque. Nam scelerisque imperdiet nisi ut rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos . Quisque pulvinar libero eu urna sagittis consectetur. Mauris mattis ut lacus non malesuada. Morbi iaculis auctor velit, at viverra lectus dignissim vel. Curabitur non erat nec augue posuere blandit. Nam vel suscipit ligula.
+                    </p>
+                </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; 1993-2003 <a href=""> Ean Jones</a>.
+    </footer>
+    
+</body>
+</html>
