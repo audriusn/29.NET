@@ -16,12 +16,11 @@
             background-color: rgb(241, 241, 241);
             padding-top: 20px;
             padding-bottom: 20px;
-        
         }
         .cell1{
             display: inline;
             color:red;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: bold;
             text-transform: capitalize;
             font-family:sans-serif;
@@ -34,7 +33,7 @@
         }
         .navbar{
             display: inline-block;
-            padding-left: 300px;
+            float: right;
         }
         .button{
             display: inline-block;
@@ -57,6 +56,109 @@
             border-radius: 7px;
             margin-right: 25px;
         }
+        .table2 {
+            float: left;
+            width: 100%;
+            border-bottom: 1px solid lightgray;
+        }
+        .calendor {
+            display:inline-block;
+            border: 1px solid lightgray;
+            border-radius: 7px;
+            height:100px;
+            margin: 20px 10px 20px 10px;
+            height: 100%;
+            float: left;
+        }
+        .calendor-top{
+            display: block;
+            background-color: red;
+            color: white;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-size: 12px;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .calendor-main {
+            display: block;
+            color: red;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .calendor-bottom {
+            background-color: gray;
+            display:block;
+            color: white;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-size: 12px;
+            text-align: center;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .up {
+            display: inline-block;
+            transform: rotateZ(270deg);
+        }
+        .dawn {
+            display: inline-block;
+            transform: rotateZ(90deg);
+        }
+        .table2-content {
+            display: inline-block;
+            float: left;
+            border-left: 1px solid lightgray;
+            margin: 10px 10px 30px 10px;
+            padding-left: 10px;
+            width: 80%;
+        }
+        h2 {
+            padding:0;
+            margin: 0;
+        }
+        p {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bolder;
+            float: left;
+        }
+        .links-row{
+            display:block;
+        }
+        .small-row {
+            padding: 0;
+            margin: 0;
+            color:gray;
+            font-size: 12px;
+        }
+        .bottom-link1 {
+            display:inline-block;
+        }
+        .bottom-link2 {
+            display: inline-block;
+            color: gray;
+            border-left: 1px solid gray;
+            padding-left: 10px;
+        }
+        a:link {
+        text-decoration: none;
+        color: blue;
+        }
+        a:active {
+            color: blue;
+        }
+        a:visited {
+			color: blue;
+	    }
     </style>
 </head>
 <body>
@@ -65,7 +167,7 @@
             <div class="cell1">
                 <img src="img/rss-feed.png" alt="icon" width="15px" > Most popular stories
             </div>
-            <div class="cell2">What's this?</div>
+            <div class="cell2"><a href="">What's this?</a></div>
             <div class="navbar">       
                 <div class="button1">now</div>
                 <div class="button">today</div>
@@ -74,7 +176,98 @@
         </div>
     </header>
     <main>
-
+        <div class="table2">
+              <div class="calendor">
+                  <div class="calendor-top">
+                      prop it <div class="up">&#187;</div>
+                  </div>
+                  <div class="calendor-main">
+                     11
+                  </div>
+                  <div class="calendor-bottom">
+                    drop it <div class="dawn">&#187;</div> 
+                  </div>
+              </div>
+              <div class="table2-content">
+                  <h2>C-SPAN ranks presidents: Abe still on top, new shocker at the bottom <a href="">&#187;</a>  </h2>
+                    <div class="small-row"> Posted by: <a href="">sameone</a> 6 hours. 32 mins ago in <a href="">Politics</a> </div>
+                    <p>Today is President's Day, that sacred holiday on the Utited States calendar devoted to honoring the births of the two most important presidents on ...</p>
+                    <div class="links-row">
+                        <div class="bottom-link1"><a href="">More</a></div>
+                        <div class="bottom-link2"><a href="">Discuss</a>(0)</div>
+                        <div class="bottom-link2"><a href="">Read Full Story at latimesblogs.taimes.com </a></div>
+                    </div>
+              </div>
+        </div>
+        <div class="table2">
+              <div class="calendor">
+                  <div class="calendor-top">
+                      prop it <div class="up">&#187;</div>
+                  </div>
+                  <div class="calendor-main">
+                     8
+                  </div>
+                  <div class="calendor-bottom">
+                    drop it <div class="dawn">&#187;</div> 
+                  </div>
+              </div>
+              <div class="table2-content">
+                  <h2>Obama Makes History... Breaks US Debt Record in Just 30 Days <a href="">&#187;</a>  </h2>
+                    <div class="small-row"> Posted by: <a href="">sameone</a> 6 hours. 32 mins ago in <a href="">Politics</a> </div>
+                    <p>On Friday the 13th , the Democratic Congress will approve the largest On Friday the 13th, the Democratics Congress will approve the largest trasfer of private ...</p>
+                    <div class="links-row">
+                        <div class="bottom-link1"><a href="">More</a></div>
+                        <div class="bottom-link2"><a href="">Discuss</a>(113)</div>
+                        <div class="bottom-link2"><a href="">Read Full Story at gatewaypundit.blogspot.com </a></div>
+                    </div>
+              </div>
+        </div>
+        <div class="table2">
+              <div class="calendor">
+                  <div class="calendor-top">
+                      prop it <div class="up">&#187;</div>
+                  </div>
+                  <div class="calendor-main">
+                     14
+                  </div>
+                  <div class="calendor-bottom">
+                    drop it <div class="dawn">&#187;</div> 
+                  </div>
+              </div>
+              <div class="table2-content">
+                  <h2>Unequal Education <a href="">&#187;</a>  </h2>
+                    <div class="small-row"> Posted by: <a href="">sameone</a> 6 hours. 32 mins ago in <a href="">Politics</a> </div>
+                    <p>No Child Left Behind demands equals test score from neighborhoods with unequal incomes and resources.</p>
+                    <div class="links-row">
+                        <div class="bottom-link1"><a href="">More</a></div>
+                        <div class="bottom-link2"><a href="">Discuss</a>(1)</div>
+                        <div class="bottom-link2"><a href="">Read Full Story at inthesectimes.com</a></div>
+                    </div>
+              </div>
+        </div>
+        <div class="table2">
+              <div class="calendor">
+                  <div class="calendor-top">
+                      prop it <div class="up">&#187;</div>
+                  </div>
+                  <div class="calendor-main">
+                     11
+                  </div>
+                  <div class="calendor-bottom">
+                    drop it <div class="dawn">&#187;</div> 
+                  </div>
+              </div>
+              <div class="table2-content">
+                  <h2>Man could face fail over 'No Jews' sign<a href="">&#187;</a>  </h2>
+                    <div class="small-row"> Posted by: <a href="">sameone</a> 6 hours. 32 mins ago in <a href="">News</a> </div>
+                    <p>The head of a Turkish nationalist group face up to a year in jail after being charged oer a piacard he put in his...</p>
+                    <div class="links-row">
+                        <div class="bottom-link1"><a href="">More</a></div>
+                        <div class="bottom-link2"><a href="">Discuss</a>(1)</div>
+                        <div class="bottom-link2"><a href="">Read Full Story at latimesblogs.taimes.com </a></div>
+                    </div>
+              </div>
+        </div>
     </main>
     <footer>
 
