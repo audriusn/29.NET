@@ -9,6 +9,10 @@
         * {
             box-sizing: border-box;
         }
+        body {
+            margin-left:2rem;
+            padding:0;
+        }
         .col1 {
             width: 8.33%;
         }
@@ -45,15 +49,56 @@
         .col12 {
             width: 100%;
         }
-        
+        .page-top {
+            width: 100%;
+            display: inline-block;
+            border-bottom: 1px solid lightgray;
+        }
+        .bigfoto {
+            display:inline-block;
+            float: left;
+            border: none;
+        }
+        .container {
+            display:inline-block;
+            float: left;
+        }
+        img {
+            width: 100%;
+        }
+        .pictures {
+            display: inline-block;
+            width: 100%;      
+            margin-top: 1rem;
+        }
+        .foto-place {
+            float: left;
+            display:inline;
+            border: 1px solid lightgray;
+            border-radius: 7px;
+            margin-right: 1rem;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            width: 15%;
+        }
+            
+        }
         @media only screen and (min-width: 600px) {
-            body {
-                
-            }
+            .foto-place {
+               
+            } 
+           
         }
         @media only screen and (max-width: 600px) {
-            body {
-               
+            .foto-place {
+                float: left;
+                width: calc(50% - 1rem);
+            }
+            .container {
+                width: 100%;
+            }
+            .bigfoto {
+                width: 100%;
             }
 
         }
@@ -64,8 +109,8 @@
     <header>
     </header>
     <main>
-        <div>
-            <div class="col6" >
+        <div class="page-top col12">
+            <div class="container col6" >
                 <div class="heading">
                     about me
                 </div>
@@ -76,14 +121,29 @@
                     content
                 </div>
             </div>
-            <div class="bigfoto" col6>
-                <img src="img/background.jpg">
+            <div class="bigfoto col6">
+                <img class="img1" src="img/background.jpg">
             </div>
-
         </div>
-        <div>
-
-        </div>
+        <div class="pictures col12">
+            <div class="foto-place">
+                <img class="img2" src="/img/foto1.jpg" alt="foto1">
+            </div>
+            <div class="foto-place">
+                <img class="img2" src="/img/foto2.jpg" alt="foto2">
+            </div>
+            <div class="foto-place ">
+                <img class="img2" src="/img/foto3.jpg" alt="foto3">
+            </div>
+            <div class="foto-place">
+                <img class="img2" src="/img/foto4.jpg" alt="foto4">
+            </div>
+            <div class="foto-place">
+                <img class="img2" src="/img/foto5.jpg" alt="foto5">
+            </div>
+            <div class="foto-place">
+                <img class="img2" src="/img/foto6.jpg" alt="foto6">
+            </div>
 
     </main>
     <footer>
