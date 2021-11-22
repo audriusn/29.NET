@@ -17,7 +17,7 @@
             width: 8.33%;
         }
         .col2 {
-            width: 16.66%;
+            width: 16%;
         }
         .col3 {
             width: 25%;
@@ -53,8 +53,31 @@
             width: 100%;
             display: inline-block;
             border-bottom: 1px solid lightgray;
+            
+        }
+        .heading {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: lowercase;
+            font-family: sans-serif;
+            padding-bottom: 2rem;
+        }
+        .text1 {
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            color: rgb(196, 196, 196);
+
+        }
+        .text2 {
+            color:gray;
+            font-family: Tahoma;
+        }
+        .text3 {
+            color:gray;
+            font-family:Verdana;
         }
         .bigfoto {
+            align: right;
             display:inline-block;
             float: left;
             border: none;
@@ -73,7 +96,7 @@
         }
         .foto-place {
             float: left;
-            display:inline;
+            display:inline-block;
             border: 1px solid lightgray;
             border-radius: 7px;
             margin-right: 1rem;
@@ -81,13 +104,15 @@
             margin-bottom: 1rem;
             width: 15%;
         }
-            
+        .fb {
+            width: 10%;
+        } 
         }
         @media only screen and (min-width: 600px) {
-            .foto-place {
-               
-            } 
-           
+            .bigfoto {
+                width: 50%;
+            }
+       
         }
         @media only screen and (max-width: 600px) {
             .foto-place {
@@ -118,30 +143,32 @@
                     I'am UI Designer and Front End Developer From Sydney, Australia
                 </div>
                 <div class="content">
-                    content
+                    <p class="text2">I enjoy taking complex problems and turning them into simple and beutiful interface designs. I also love the logic and structure of coding and always strive to write elegant and  efficient code, whether it be HTML, CSS, jQuery.</p>
+                    <p class="text3">When I'm not coding or pushing pixels, you'll find me in the gym or on the count shooting some hoops.</p>
+                    <P><img class="fb" src="/img/fb like.jfif"> <img class="fb" src="img/twitter.png"> </p>
                 </div>
             </div>
             <div class="bigfoto col6">
-                <img class="img1" src="img/background.jpg">
+                <img class="img1" src="img/background.jpg"> 
             </div>
         </div>
         <div class="pictures col12">
-            <div class="foto-place">
+            <div class="foto-place col2">
                 <img class="img2" src="/img/foto1.jpg" alt="foto1">
             </div>
-            <div class="foto-place">
+            <div class="foto-place col2">
                 <img class="img2" src="/img/foto2.jpg" alt="foto2">
             </div>
-            <div class="foto-place ">
+            <div class="foto-place col2">
                 <img class="img2" src="/img/foto3.jpg" alt="foto3">
             </div>
-            <div class="foto-place">
+            <div class="foto-place col2">
                 <img class="img2" src="/img/foto4.jpg" alt="foto4">
             </div>
-            <div class="foto-place">
+            <div class="foto-place col2">
                 <img class="img2" src="/img/foto5.jpg" alt="foto5">
             </div>
-            <div class="foto-place">
+            <div class="foto-place col2">
                 <img class="img2" src="/img/foto6.jpg" alt="foto6">
             </div>
 
