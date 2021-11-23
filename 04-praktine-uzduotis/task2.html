@@ -9,34 +9,155 @@
         body {
             background-image: url("/img/task2-background.png");
             background-repeat: repeat;
+            margin: 0;
+            padding: 0;
+        }
+        .top-text {
+            display:inline-block;
+            padding-top: 2rem;
+            padding-left: 0.8rem;
+            padding-right: 0.8rem;
+        }
+        .top-left-text {
+            font-size: 2rem;
+            width: 68%;
+            float: left;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: gray;    
+        }
+        .top-right-text {
+            width: 30%;
+            float: left;
+        }
+        span:nth-last-of-type(1n) {
+            font-weight: bold;
+        }
+        .top-right-text{
+            font-size: 1rem;
+            color:gray;
+            font-family: Geneva, Tahoma, sans-serif;
+        }
+        .bottom-foto-line{
+            padding-top: 2rem;
+            display: block;
+        }
+        .foto-place {
+            display: inline-block; 
+            padding-left: 0.8rem;     
+            padding-right: 0.8rem;
+        }
+        .foto {
+            border: 2px solid lightgray;
+            padding:0.5rem;
+            width: 100%;
+        }
+        .name {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: Geneva, Tahoma, sans-serif;
+            color: gray;
+        }
+        .position {
+            font-size: 0.8rem;
+            text-transform: capitalize;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(129, 129, 129);
+        }
+        .email {
+            text-align: center;
+            color: gray;
+            font-size: 0.85rem;
+        }
+        img::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+        @media only screen and (max-width: 600px) {
+            .foto-place {
+                width: 40%;
+            }
+            .top-left-text {
+                width: 100%;
+            }
+            .top-right-text {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <main>
-        <div>
-            <div>
-                
+        <div class="top-text">
+            <div class="top-left-text">
+                <p>We do everything with our core values of <span>honesty,</span> hard <span>work,</span> and <span>trust.</span></p>
             </div>
-            <div>
-
+            <div class="top-right-text">
+               <p><span>We believe these characteristic</span> should influence everything we do in business and in life. We sincerely enjoy the work we do, and our cliets get to reap the benefits.</p>
             </div>
         </div>
-        <div>
-            <div>
-                
+        <div class="bottom-foto-line ">
+            <div class="foto-place ">
+                <img class="foto" src="img/face1.png" alt="face1">
+                <p class="name">
+                    Eric Downs
+                </p>
+                <p class="position">
+                    Creative Director
+                </p>
+                <p class="email">
+                    eric@grainandmortar.com
+                </p>
             </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
+            <div class="foto-place ">
+                <img class="foto" src="img/face2.png" alt="face2">
+                <p class="name">
+                    Mike dekay
+                </p>
+                <p class="position">
+                    Creative Director
+                </p>
+                <p class="email">
+                    mike@grainandmortar.com
+                </p>
+               </div> 
+            <div class="foto-place ">
+                <img class="foto" src="img/face3.png" alt="face3">
+                <p class="name">
+                    Kristin dekay       
+                </p>
+                <p class="position">
+                    Operations Director
+                </p>
+                <p class="email">
+                    kristin@grainandmortar.com
+                </p>
+            </div> 
+            <div class="foto-place ">
+                <img class="foto" src="img/face4.png" alt="face4">
+                <p class="name">
+                    Miranda bouck
+                </p>
+                <p class="position">
+                    Designer
+                </p>
+                <p class="email">
+                    miranda@grainandmortar.com
+                </p>
+            </div>    
+            <div class="foto-place ">
+                <img class="foto" src="img/face5.png" alt="face5">
+                <p class="name">
+                    Jesse harding
+                </p>
+                <p class="position">
+                    Designer
+                </p>
+                <p class="email">
+                   jesse@grainandmortar.com
+                </p>
             </div>
         </div>
 
