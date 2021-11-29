@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body> 
+    <button id="but1" onclick="showlist()">Show</button>
+        <script>
+            function showlist() {
+                document.getElementById('but1').innerHTML ='Hide';
+                document.getElementById('but1').onclick = hidelist;
+                document.getElementById('menulist').style.display = 'block';   
+                }
+            function hidelist() {
+                document.getElementById('but1').innerHTML ='Show';
+                document.getElementById('but1').onclick = showlist;
+                document.getElementById('menulist').style.display = 'none';
+                 }
+        </script>
+        <div id="menulist" style="display: none;">
+            <p><a href="">Menu 1</a></p>
+            <p><a href="">Menu 2</a></p>
+            <p><a href="">Menu 3</a></p>
+            <p><a href="">Menu 4</a></p>
+            <p><a href="">Menu 5</a></p>
+            <p><a href="">Menu 6</a></p>     
+        </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+</head>
+<body>
+	<script>
+		let newElem = document.createElement ('div');
+		document.body.appendChild(newElem);
+		newElem.innerHTML = '<h1 id="heading1">Heading1</h1>';
+		document.getElementById("heading1").style.color = "red";
+		document.getElementById("heading1").style.backgroundColor = "gray";
+		document.getElementById("heading1").style.margin = 0;
+		let sometext = document.createElement ('p');
+		sometext.id = "text";
+		document.getElementsByTagName('div')[0].appendChild(sometext);
+		sometext.innerHTML += ('lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum');
+		document.getElementById("text").style.fontStyle = "italic";
+		let h2 = document.createElement ('h2');
+		document.getElementsByTagName('div')[0].appendChild(h2);
+		h2.innerHTML = ('Heading2');
+		let sometext2 = document.createElement ('p');
+		sometext2.id = "text2";
+		document.getElementsByTagName('div')[0].appendChild(sometext2);
+		sometext2.innerHTML += ('lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum lorem ipsum ipsum lorem lorem lerem ipsum ipsum');
+		document.getElementById("text2").style.fontStyle = "italic";
+		document.getElementById("text2").style.fontWeight = "bold";
+		let linktotop = document.createElement('p');
+		linktotop.id = "linkp";
+		document.getElementsByTagName('div')[0].appendChild(linktotop);
+		linktotop.innerHTML = '<a href="#">Į viršų</a>';
+	</script>
+</body>
+</html>
