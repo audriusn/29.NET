@@ -5,16 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS mood</title>
+    <style>
+      #myDiv{
+        width: 200px;
+        height: 100px;
+        border: 40px solid black;
+        background-color: red;
+      }
+    </style>
 </head>
 <body>
-    <div id="myDiv"></div>
-    <script>
-       let input = document.getElementById('myDiv');
-       input.innerHTML = '<input id="content" type="text" value="text">';
-       let output = document.getElementById('myDiv');
-       output = function(){
-       document.getElementById('content').innerHTML = output.value;
+   <p>Content:<input id="input" type="text" value="text" oninput="changeText()"></p>
+   <p>Size:<input id="font" oninput="updateSize()" type="number" value="16">
+     Style:
+     <input id="bold" type="checkbox">Bold
+     <input id="italic" type="checkbox">Italic
+     <input id="underline" type="checkbox">Underline </p>
+     <p>Width:<input id="wid" oninput="changeW()" type="text" value="200"> Height: <input id="hei" oninput="changeH()" type="text" value="100"></p>
+     <p>Align:
+      <input name="Talign" onclick="textAlign(this.value)" type="radio">Left
+      <input name="Talign" onclick="textAlign(this.value)" type="radio">Middle
+      <input name="Talign" onclick="textAlign(this.value)" type="radio">Right</p>
+    <div id="myDiv">text</div> 
+   
+    <script> 
+    function changeText(){
+      newtext = document.getElementById('input').value;
+      document.getElementById('myDiv').innerHTML= newtext;
     }
+    function updateSize() {
+      TS = document.getElementById('font').value;
+      document.getElementById('myDiv').style.fontSize = TS +'px';
+    
+    }
+    function changeW() {
+      W1 = document.getElementById('wid').value;
+      document.getElementById('myDiv').style.width = W1 + 'px';
+    }
+    function changeH() {
+      H1 = document.getElementById('hei').value;
+      document.getElementById('myDiv').style.height = H1 + 'px';
+    }
+    function textAling(){
+       let AL = 
+       
+       console.log(AL);
+        } 
+    
+ 
     </script>
 </body>
 </html>
