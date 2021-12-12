@@ -11,6 +11,9 @@
         height: 100px;
         border: 40px solid black;
         background-color: red;
+        padding:5px;
+        display: table-cell;
+        
       }
     </style>
 </head>
@@ -18,41 +21,128 @@
    <p>Content:<input id="input" type="text" value="text" oninput="changeText()"></p>
    <p>Size:<input id="font" oninput="updateSize()" type="number" value="16">
      Style:
-     <input id="bold" type="checkbox">Bold
-     <input id="italic" type="checkbox">Italic
-     <input id="underline" type="checkbox">Underline </p>
+     <input id="bold" onclick="makebold()" onclick="unbold()" type="checkbox">Bold
+     <input id="italic" onclick="makestyle()" onclick="removestyle()" type="checkbox">Italic
+     <input id="underline" onclick="makeline()" onclick="removeline()" type="checkbox">Underline </p>
      <p>Width:<input id="wid" oninput="changeW()" type="text" value="200"> Height: <input id="hei" oninput="changeH()" type="text" value="100"></p>
      <p>Align:
-      <input name="Talign" onclick="textAlign(this.value)" type="radio">Left
-      <input name="Talign" onclick="textAlign(this.value)" type="radio">Middle
-      <input name="Talign" onclick="textAlign(this.value)" type="radio">Right</p>
+      <input name="Talign" id="LFT" onclick="textLeft()"  type="radio">Left
+      <input name="Talign" id="MID" onclick="textMiddle()" type="radio">Middle
+      <input name="Talign" id="RGT" onclick="textRight()"  type="radio">Right
+    </p>
+    <p>Vertical:
+      <input name="TValign" id="top" onclick="textTop()" type="radio">Top
+      <input name="TValign" id="middle" onclick="textCenter()" type="radio">Middle
+      <input name="TValign" id="bottom" onclick="textBottom()" type="radio">Bottom
+    </p>
+    <p>
+      Text color:<input type="color" id="textcolor" oninput="changeTC()" value="#000000">
+      Back color:<input type="color" id="backcolor" oninput="changeBC()" value="#ff0000">
+      Border color:<input type="color" id="bordertcolor" oninput="changeBordC()" value="#000000">
+      Size: <input type="range" min="1" max="600" value="40" class="slider" id="bordersize" oninput="changeBordSize()">
+    </p>
+    <p>
+      Padding: <input type="range" min="1" max="400" value="5" class="slider" id="paddingsize" oninput="changepadding()">
+    </p>
     <div id="myDiv">text</div> 
    
     <script> 
     function changeText(){
-      newtext = document.getElementById('input').value;
-      document.getElementById('myDiv').innerHTML= newtext;
+        newtext = document.getElementById('input').value;
+        document.getElementById('myDiv').innerHTML= newtext;
     }
     function updateSize() {
-      TS = document.getElementById('font').value;
-      document.getElementById('myDiv').style.fontSize = TS +'px';
-    
+        TS = document.getElementById('font').value;
+        document.getElementById('myDiv').style.fontSize = TS +'px';
     }
+//div dimensions
     function changeW() {
-      W1 = document.getElementById('wid').value;
-      document.getElementById('myDiv').style.width = W1 + 'px';
+        W1 = document.getElementById('wid').value;
+        document.getElementById('myDiv').style.width = W1 + 'px';
     }
     function changeH() {
-      H1 = document.getElementById('hei').value;
-      document.getElementById('myDiv').style.height = H1 + 'px';
+        H1 = document.getElementById('hei').value;
+        document.getElementById('myDiv').style.height = H1 + 'px';
     }
-    function textAling(){
-       let AL = 
-       
-       console.log(AL);
+//text style
+    function makebold() {
+        document.getElementById('bold').checked = true;
+        document.getElementById('myDiv').style.fontWeight='bold';
+        document.getElementById('bold').onclick = unbold;
+        }
+    function unbold()  {
+        document.getElementById('bold').checked = false;
+        document.getElementById('myDiv').style.fontWeight='normal';
+        document.getElementById('bold').onclick = makebold; 
+    }  
+    function makestyle() {
+        document.getElementById('italic').checked = true;
+        document.getElementById('myDiv').style.fontStyle='italic';
+        document.getElementById('italic').onclick = removestyle;
+        }
+    function removestyle()  {
+        document.getElementById('italic').checked = false;
+        document.getElementById('myDiv').style.fontStyle='normal';
+        document.getElementById('italic').onclick = makestyle;   
+    }    
+    function makeline() {
+        document.getElementById('underline').checked = true;
+        document.getElementById('myDiv').style.textDecoration='underline';
+        document.getElementById('underline').onclick = removeline;
+        }
+    function removeline()  {
+        document.getElementById('underline').checked = false;
+        document.getElementById('myDiv').style.textDecoration='none';
+        document.getElementById('underline').onclick = makeline;   
+    }  
+// text align
+    function textRight(){
+        document.getElementById('RGT').checked = true;
+        document.getElementById('myDiv').style.textAlign='right';
         } 
-    
- 
+    function textMiddle(){
+        document.getElementById('MID').checked = true;
+        document.getElementById('myDiv').style.textAlign='center';
+        } 
+    function textLeft(){
+        document.getElementById('LFT').checked = true;
+        document.getElementById('myDiv').style.textAlign='left';
+        } 
+//vertical align
+    function textTop(){
+        document.getElementById('top').checked = true;
+        document.getElementById('myDiv').style.verticalAlign='top';
+        } 
+    function textCenter(){
+        document.getElementById('middle').checked = true;
+        document.getElementById('myDiv').style.verticalAlign='middle';
+        } 
+    function textBottom(){
+        document.getElementById('bottom').checked = true;
+        document.getElementById('myDiv').style.verticalAlign='bottom';
+        }
+
+//color menu
+    function changeTC() {
+        tcol = document.getElementById('textcolor').value;
+        document.getElementById('myDiv').style.color = tcol;
+    }
+    function changeBC() {
+        bcol = document.getElementById('backcolor').value;
+        document.getElementById('myDiv').style.backgroundColor = bcol;
+    }
+    function changeBordC() {
+        bordcol = document.getElementById('bordertcolor').value;
+        document.getElementById('myDiv').style.borderColor = bordcol;
+    }
+    function changeBordSize() {
+        bordsize = document.getElementById('bordersize').value;
+        document.getElementById('myDiv').style.borderWidth = bordsize +'px';
+    }
+    function changepadding() {
+        paddingsize = document.getElementById('paddingsize').value;
+        document.getElementById('myDiv').style.padding = paddingsize +'px';
+    }
     </script>
 </body>
 </html>
