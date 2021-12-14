@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//1'st
+        let x =[];
+        for(let j=0; j<10; j++){
+            let n = [];
+        for (let i=0; i<5; i++){
+            n.push(Math.floor(Math.random()*(26-5)+5));
+        }
+        x.push(n);
+    }
+        console.log(x);
+//2'nd a   
+    //    let count=0;
+    //     for(j=0; j < x.length; ++j){
+    //         for(let i=0; i<5; i++){
+    //             if(x[j][i]>10){
+    //                 count++;
+    //             }
+    //         }
+    //     }
+    //     console.log(count);
+//2'nd b
+    //    let max = 0;
+    //     for (let j=0; j < x.length; ++j){
+    //         let check = Math.max(...x[j]);
+    //         if (check > max){
+    //             max = check;
+    //         }
+    //     }
+    //    console.log(max);
+//2'nd c
+        // let sum0=0;
+        // let sum1=0;
+        // let sum2=0;
+        // let sum3=0;
+        // let sum4=0;
+        // for(j=0; j<x.length; ++j){
+        //     for(i=0; i < 5; ++i){
+        //         if(i==0){
+        //             sum0 += x[j][i];
+        //         }if(i==1){
+        //             sum1 += x[j][i];
+        //         }if(i==2){
+        //             sum2 += x[j][i];
+        //         }if(i==3){
+        //             sum3 += x[j][i];
+        //         }if(i==4){
+        //             sum4 += x[j][i];
+        //         }
+        //     }
+        // }console.log(sum0,sum1,sum2,sum3,sum4)
+//2'nd d
+        // for (let j=0; j<10; j++){
+        // for (let i=5; i<7; i++){
+        //     x[j][i]=(Math.floor(Math.random()*(26-5)+5));
+        //         } 
+        //      } console.log(x);
+//2'nd e
+            let sum0=0;
+            let sum1=0;
+            let sum2=0;
+            let sumarray=[];
+            for(j=0; j < x.length; ++j){
+                
+                for(i=0; i<5; ++i){
+                   
+                    if(j==0){
+                        sum0+=x[j][i];
+                        sumarray.push(sum0);
+                    }
+                    if(j==1){
+                        sum1+=x[j][i];
+                        sumarray.push(sum1);
+                    }
+                    if(j==2){
+                        sum2+=x[j][i];
+                        sumarray.push(sum2);
+                    }
+                }
+            }console.log(sum0,sum1,sum2, sumarray)
+
+     </script>
+</body>
+</html
