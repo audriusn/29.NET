@@ -1,0 +1,94 @@
+*	{
+    box-sizing: border-box;
+    }
+    body {
+    background-image: url("/webpage/images/backgrpic2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 5px;
+}
+
+header {
+    text-align: center;	
+    margin:0;
+    padding: 0;
+}	
+
+nav {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: #000000;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;	
+}
+nav a {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+h1 {
+    color: Black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    margin:0;
+}
+.content {
+    font-weight: bold;
+    margin:3px;
+}
+.item-content{
+    font-weight: bold;
+    vertical-align: middle;
+}
+#logo{
+    width:150px;
+}
+#item{
+    width:30px;
+}
+#date{
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-style: italic;
+    border-bottom: 2px solid black;
+}
+.news-content{
+   font-weight: bold;
+    font-style: italic;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: #22577A ;
+}
+.sending{
+    display:inline-block;
+}
+.mycontacts{
+    display:inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+footer {
+    border-top: 2px solid black;
+    padding-top: 50px;
+}
+#not-found{
+    font-size: 4rem;
+}
+#errotext{
+    font-size: 2rem;
+}
+@media only screen and (max-width: 620px) {
+    .mycontacts {
+        width: 100%;
+    }
+    .sending {
+        width: 100%;
+    }
+}
